@@ -13,47 +13,40 @@ struct ContentView: View {
     @Query private var items: [Item]
 
     var body: some View {
-        NavigationSplitView {
-            List {
-                ForEach(items) { item in
-                    NavigationLink {
-                        Text("Item at \(item.timestamp, format: Date.FormatStyle(date: .numeric, time: .standard))")
-                    } label: {
-                        Text(item.timestamp, format: Date.FormatStyle(date: .numeric, time: .standard))
+        VStack{
+            HStack{
+                VStack{
+                    HStack{
+                        Text("Good Morning!")
+                            .fontWeight(.regular)
+                            .font(.headline)
+                            .fontDesign(.default)
+                        Spacer()
+                    }
+                    HStack{
+                        Text("Divyansh Bhardwaj")
+                            .fontWeight(.heavy)
+                            .bold()
+                            .font(.title)
+                            .fontDesign(.default)
+                            .minimumScaleFactor(0.01)
+                            .lineLimit(1)
+                            
+                        Spacer()
                     }
                 }
-                .onDelete(perform: deleteItems)
+                .padding(.leading)
+                
+                Text("Toggle Here")
+                    .font(.largeTitle)
+                    .padding(.trailing)
             }
-            .toolbar {
-                ToolbarItem(placement: .navigationBarTrailing) {
-                    EditButton()
-                }
-                ToolbarItem {
-                    Button(action: addItem) {
-                        Label("Add Item", systemImage: "plus")
-                    }
-                }
-            }
-        } detail: {
-            Text("Select an item")
+            Spacer()
         }
-    }
-
-    private func addItem() {
-        withAnimation {
-            let newItem = Item(timestamp: Date())
-            modelContext.insert(newItem)
-        }
-    }
-
-    private func deleteItems(offsets: IndexSet) {
-        withAnimation {
-            for index in offsets {
-                modelContext.delete(items[index])
-            }
-        }
+        .padding(.top)
     }
 }
+
 
 #Preview {
     ContentView()
