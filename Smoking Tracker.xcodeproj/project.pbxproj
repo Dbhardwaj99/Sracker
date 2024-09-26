@@ -6,11 +6,58 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		C145F6B52CA5227000CD2359 /* MetricTestKeyboard.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = C145F6AE2CA5227000CD2359 /* MetricTestKeyboard.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C145F6B32CA5227000CD2359 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C1AE56A42C9FED4400D7F3F7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C145F6AD2CA5227000CD2359;
+			remoteInfo = MetricTestKeyboard;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		C145F6B62CA5227000CD2359 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				C145F6B52CA5227000CD2359 /* MetricTestKeyboard.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		C145F6AE2CA5227000CD2359 /* MetricTestKeyboard.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = MetricTestKeyboard.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1AE56AC2C9FED4400D7F3F7 /* Smoking Tracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Smoking Tracker.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		C145F6B92CA5227000CD2359 /* Exceptions for "MetricTestKeyboard" folder in "MetricTestKeyboard" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = C145F6AD2CA5227000CD2359 /* MetricTestKeyboard */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
 /* Begin PBXFileSystemSynchronizedRootGroup section */
+		C145F6AF2CA5227000CD2359 /* MetricTestKeyboard */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				C145F6B92CA5227000CD2359 /* Exceptions for "MetricTestKeyboard" folder in "MetricTestKeyboard" target */,
+			);
+			path = MetricTestKeyboard;
+			sourceTree = "<group>";
+		};
 		C1AE56AE2C9FED4400D7F3F7 /* Smoking Tracker */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = "Smoking Tracker";
@@ -19,6 +66,13 @@
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		C145F6AB2CA5227000CD2359 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C1AE56A92C9FED4400D7F3F7 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -33,6 +87,7 @@
 			isa = PBXGroup;
 			children = (
 				C1AE56AE2C9FED4400D7F3F7 /* Smoking Tracker */,
+				C145F6AF2CA5227000CD2359 /* MetricTestKeyboard */,
 				C1AE56AD2C9FED4400D7F3F7 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -41,6 +96,7 @@
 			isa = PBXGroup;
 			children = (
 				C1AE56AC2C9FED4400D7F3F7 /* Smoking Tracker.app */,
+				C145F6AE2CA5227000CD2359 /* MetricTestKeyboard.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -48,6 +104,28 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		C145F6AD2CA5227000CD2359 /* MetricTestKeyboard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C145F6BA2CA5227000CD2359 /* Build configuration list for PBXNativeTarget "MetricTestKeyboard" */;
+			buildPhases = (
+				C145F6AA2CA5227000CD2359 /* Sources */,
+				C145F6AB2CA5227000CD2359 /* Frameworks */,
+				C145F6AC2CA5227000CD2359 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				C145F6AF2CA5227000CD2359 /* MetricTestKeyboard */,
+			);
+			name = MetricTestKeyboard;
+			packageProductDependencies = (
+			);
+			productName = MetricTestKeyboard;
+			productReference = C145F6AE2CA5227000CD2359 /* MetricTestKeyboard.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		C1AE56AB2C9FED4400D7F3F7 /* Smoking Tracker */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = C1AE56BC2C9FED4600D7F3F7 /* Build configuration list for PBXNativeTarget "Smoking Tracker" */;
@@ -55,10 +133,12 @@
 				C1AE56A82C9FED4400D7F3F7 /* Sources */,
 				C1AE56A92C9FED4400D7F3F7 /* Frameworks */,
 				C1AE56AA2C9FED4400D7F3F7 /* Resources */,
+				C145F6B62CA5227000CD2359 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				C145F6B42CA5227000CD2359 /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
 				C1AE56AE2C9FED4400D7F3F7 /* Smoking Tracker */,
@@ -80,6 +160,9 @@
 				LastSwiftUpdateCheck = 1600;
 				LastUpgradeCheck = 1600;
 				TargetAttributes = {
+					C145F6AD2CA5227000CD2359 = {
+						CreatedOnToolsVersion = 16.0;
+					};
 					C1AE56AB2C9FED4400D7F3F7 = {
 						CreatedOnToolsVersion = 16.0;
 					};
@@ -100,11 +183,19 @@
 			projectRoot = "";
 			targets = (
 				C1AE56AB2C9FED4400D7F3F7 /* Smoking Tracker */,
+				C145F6AD2CA5227000CD2359 /* MetricTestKeyboard */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		C145F6AC2CA5227000CD2359 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C1AE56AA2C9FED4400D7F3F7 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -115,6 +206,13 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		C145F6AA2CA5227000CD2359 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C1AE56A82C9FED4400D7F3F7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -124,7 +222,65 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		C145F6B42CA5227000CD2359 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C145F6AD2CA5227000CD2359 /* MetricTestKeyboard */;
+			targetProxy = C145F6B32CA5227000CD2359 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		C145F6B72CA5227000CD2359 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4Q398HUTA3;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MetricTestKeyboard/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = MetricTestKeyboard;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "divyansh.Smoking-Tracker.MetricTestKeyboard";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C145F6B82CA5227000CD2359 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 4Q398HUTA3;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MetricTestKeyboard/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = MetricTestKeyboard;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "divyansh.Smoking-Tracker.MetricTestKeyboard";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		C1AE56BA2C9FED4600D7F3F7 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -305,6 +461,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		C145F6BA2CA5227000CD2359 /* Build configuration list for PBXNativeTarget "MetricTestKeyboard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C145F6B72CA5227000CD2359 /* Debug */,
+				C145F6B82CA5227000CD2359 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		C1AE56A72C9FED4400D7F3F7 /* Build configuration list for PBXProject "Smoking Tracker" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
