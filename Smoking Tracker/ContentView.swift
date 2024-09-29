@@ -16,9 +16,11 @@ struct ContentView: View {
         VStack(alignment: .leading){
             TopBar()
             GraphView()
+            JournalPreview()
             Spacer()
         }
         .padding(.top)
+        .background(Color.BG)
     }
 }
 

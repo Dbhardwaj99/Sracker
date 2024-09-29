@@ -19,6 +19,7 @@ struct TopBar: View {
                         .minimumScaleFactor(0.01)
                         .lineLimit(1)
                         .padding(.leading)
+                        .foregroundStyle(Color.black)
                 }
                 HStack{
                     Text("Divyansh Bhardwaj")
@@ -27,6 +28,7 @@ struct TopBar: View {
                         .minimumScaleFactor(0.01)
                         .lineLimit(1)
                         .padding(.leading)
+                        .foregroundStyle(Color.black)
                 }
             }
                 
